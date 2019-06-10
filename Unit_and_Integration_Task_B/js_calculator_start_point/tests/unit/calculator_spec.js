@@ -10,5 +10,14 @@ describe('calculator', function () {
   it('it has a sample test', function(){
     assert.equal(true, true)
   })
+  it('it should be able to add 1 and 4 and get 5', function(){
+    debugger;
+    calculator.add(1)
+    calculator.add(4)
+    assert.equal(5, calculator.runningTotal)
+  })
+  xit('it should be able to subtract', function(){
+    assert.equal(true, true)
+  })
 
 });
