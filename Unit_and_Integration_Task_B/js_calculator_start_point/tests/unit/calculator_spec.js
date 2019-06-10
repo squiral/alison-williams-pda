@@ -16,8 +16,15 @@ describe('calculator', function () {
     calculator.add(4)
     assert.equal(5, calculator.runningTotal)
   })
-  xit('it should be able to subtract', function(){
-    assert.equal(true, true)
+  it('it should be able to subtract 4 from 7 and get 3', function(){
+    calculator.previousTotal = 7
+    calculator.subtract(4)
+    assert.equal(3, calculator.runningTotal)
+  })
+  it('it should be able to multiply 3 by 5 and get 15', function(){
+    calculator.previousTotal = 3
+    calculator.multiply(5)
+    assert.equal(15, calculator.runningTotal)
   })
 
 });
