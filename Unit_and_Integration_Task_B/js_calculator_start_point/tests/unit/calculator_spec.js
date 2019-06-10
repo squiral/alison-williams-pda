@@ -12,7 +12,7 @@ describe('calculator', function () {
   })
   it('it should be able to add 1 and 4 and get 5', function(){
     debugger;
-    calculator.add(1)
+    calculator.previousTotal = 1
     calculator.add(4)
     assert.equal(5, calculator.runningTotal)
   })
